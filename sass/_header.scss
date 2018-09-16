@@ -1,0 +1,99 @@
+// HEADER
+
+$header-height: 20vh;
+
+#branding {
+  background: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.hgroup-wrap {
+  padding: 2rem 0;
+  position: relative;
+  min-height: $header-height;
+  background-color: white;
+}
+
+#site-logo {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  min-height: $header-height;
+}
+
+#site-title {
+  @include sanscaps;
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0.8em;
+  margin-top: $header-height / 3;
+  @include query($breakpoint-mobile) {
+    margin-top: 0;
+  }
+}
+
+  #site-title a {
+    color: black;
+  }
+
+#site-description {
+  @include sanscaps;
+  font-size: 1.5rem;
+  color: $color-text;
+  margin: 2rem 0 0;
+  line-height: 1.5em;
+}
+
+.hgroup-wrap > a {
+  position: absolute;
+  mix-blend-mode: lighten;
+  margin-top: $header-height / 3;
+  @include query($breakpoint-mobile) {
+    display: none;
+    margin-top: 0;
+  }
+}
+
+.hgroup-wrap img {
+  margin: 0;
+  width: 100%;
+  height: ($header-height / 3) * 2;
+}
+
+// NAV
+
+#access {
+  background: none;
+  border-bottom: none;
+  position: relative;
+  left: -50%;
+  float: right;
+}
+
+#access ul {
+  position: relative;
+  left: 50%;
+}
+
+#access li {
+  display: inline-block;
+}
+
+#access a {
+  @include sanscaps;
+  font-weight: bold;
+  color: $color-text;
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 1rem 2em;
+  opacity: 0.5;
+  height: 100%;
+}
+
+#access a:hover, #access ul li.current-menu-item a, #access ul li.current_page_ancestor a, #access ul li.current-menu-ancestor a, #access ul li.current_page_item a, #access ul li:hover > a {
+  border-top: none;
+  color: $color-accent;
+  transition: 0.1s;
+}

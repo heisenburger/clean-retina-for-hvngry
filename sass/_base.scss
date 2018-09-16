@@ -1,0 +1,29 @@
+// BASE
+// ----
+
+:focus { // parent theme removes focus styles, which is just bonkers
+  outline: 3px solid $color-accent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, input, textarea, select {
+  color: $color-text;
+  font-family: $font-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+
+body {
+  background-color: $color-background;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}

@@ -1,0 +1,40 @@
+// Theme info
+// ----------
+
+$theme_name: "Clean Retina for HVNGRY";
+$theme_description: "HVNGRY's WordPress theme";
+$theme_version: "2.0.0";
+$theme_author: "Serena Chen";
+$theme_author_uri: "https://serena.nz";
+$theme_template: "clean-retina";
+
+// Style settings
+// --------------
+
+$color-accent:     #1fdd85;
+$color-background: white;
+$color-text:       #2f2f2f;
+
+$font-serif: 'georgiaregular', Georgia, serif;
+$font-sans:  'nexa', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+// these breakpoints are from the parent theme
+$breakpoint-tiny:   319px;
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 1023px;
+
+// Helper functions
+// ----------------
+
+// we would usually use min-width but alas we must stick to the parent theme's css sensibilities (of which I am judging)
+@mixin query($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin sanscaps {
+  font-family: $font-sans;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

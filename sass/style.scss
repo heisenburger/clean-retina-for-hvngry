@@ -1,0 +1,15 @@
+@import "vars";
+
+/*!
+Theme Name: #{ $theme_name }
+Description: #{ $theme_description }
+Version: #{ $theme_version }
+Author: #{ $theme_author }
+Author URI: #{ $theme_author_uri }
+Template: #{ $theme_template }
+*/
+
+@import "fonts";
+@import "base";
+
+@import "header";
