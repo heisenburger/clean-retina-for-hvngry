@@ -50,6 +50,10 @@ $header-height: 20vh;
   position: absolute;
   mix-blend-mode: lighten;
   margin-top: $header-height / 3;
+  width: 100%;
+  height: $header-height;
+  top: 0;
+  background-size: cover;
   @include query($breakpoint-mobile) {
     display: none;
     margin-top: 0;

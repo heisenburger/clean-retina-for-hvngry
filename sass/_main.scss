@@ -1,1 +1,24 @@
 // MAIN
+
+#content .post {
+  padding-bottom: 2rem;
+}
+
+.entry-header {
+  padding-bottom: 1rem;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  padding-bottom: 1rem;
+}
+
+.entry-title, .entry-title a {
+  color: $color-text;
+}
+
+.entry-title {
+  font-size: 3rem;
+  line-height: 1em;
+  font-family: $font-serif;
+  font-style: italic;
+}
